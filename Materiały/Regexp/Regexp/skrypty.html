@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+function sprawdz()
+{
+
+	obj=document.getElementById('tekst');
+	txt = obj.value;	
+
+	var Wyrazenie = /[a-z]+/g
+	wynik =  Wyrazenie.test(txt);
+	alert(wynik);	
+
+}
+function sprawdz2()
+{
+
+	var tekst = "Fantomas robi mase - marchewkowo-marcepanowa";
+	var wzor = /mas/g;
+	var tablicaWynikow = tekst.match(wzor); 
+	if (tablicaWynikow.length) {
+    		for (i=0;i<tablicaWynikow.length;i++)
+		{
+			alert(tablicaWynikow[i]);
+
+		}
+	}
+
+}
+
+
+</script>
+
+
+</head>
+
+<body onLoad="zwieksz()">
+<form action="" method="get">
+
+	<input type="button" value="SPRAWDZ" onclick="sprawdz()" />
+	<input type="text" id="tekst" />
+</form>
+</body>
+
+</html>

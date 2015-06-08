@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>kalkulator</title>
+	
+	<LINK REL="Stylesheet" HREF="style.css" TYPE="text/css">
+	
+	<script type="text/javascript">
+	    function checkElement(name) {
+	        document.getElementById("result").value = document.getElementById("result").value + name.value;
+	    }
+		
+		function oblicz(){
+			document.getElementById("result").value = eval(document.getElementById("result").value);
+		}
+	</script>
+	
+</head>
+
+<body>
+	<form>
+	<div class="one">
+		<div>
+			<p style="color: white">KALKULATOR v1.0</p>
+		</div>
+		
+		<div class="wyswietlacz" >
+			<input type="text" id="result"/>
+		</div>
+		
+		<div style="float: left; margin-left: 13px">
+			<input class="numericButton" type="button" id="one" value="1" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" id="two" value="2" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" id="three" value="3" onClick="checkElement(this)"/>
+		</div>
+		<div style="margin-right:2px">
+			<input class="numericButton" type="button" id="razy" value="*" onClick="checkElement(this)"/>
+		</div>
+		
+		<div style="float: left; margin-left: 13px">
+			<input class="numericButton" type="button" id="four" value="4" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" id="five" value="5" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" id="six" value="6" onClick="checkElement(this)"/>
+		</div>
+		<div style="margin-right:2px">
+			<input class="numericButton" type="button" id="minus" value="-" onClick="checkElement(this)"/>
+		</div>	
+		
+		<div style="float: left; margin-left: 13px">
+			<input class="numericButton" type="button" id="seven" value="7" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" id="eight" value="8" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" id="nine" value="9" onClick="checkElement(this)"/>
+		</div>
+		
+		<div style="float: left; margin-left: 13px">
+			<input class="numericButton" type="button" id="zero" value="0" onClick="checkElement(this)">
+			<input class="numericButton" type="button" id="kropka" value="." onClick="checkElement(this)"/>
+		</div>
+		
+		<div style="margin-right:2px">
+			<input class="numericButton" style="height: 88px" type="button" id="plus" value="+" onClick="checkElement(this)"/>
+		</div>
+		
+		<div style="float: left; margin-left: 13px; clear: both">
+			<input class="numericButton" style="padding-left: 1px" type="reset" name="reset" value="CE"/>
+			<input class="numericButton" type="button" id="podziel" value="/" onClick="checkElement(this)"/>
+			<input class="numericButton" type="button" style="width: 90px" name="licz" value="=" onClick="oblicz()"/>
+		</div>
+		
+		<div>
+			<p style="color: white">Robert Borkowski TM</p>
+		</div>
+	</div>
+	
+	<div class="end" style="clear: both"><a href="http://validator.w3.org/check?uri=http%3A%2F%2Frobertborkowski.cba.pl%2Findex.html"><img src="validator.png" alt="Błąd obrazka" /></a></div>
+	</form>
+</body>
+</html>

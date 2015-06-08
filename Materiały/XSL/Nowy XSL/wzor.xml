@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="wzor.xslt"?>
+<Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <References>
+    <Our_Ref>150000</Our_Ref>
+  </References>
+  <Status>
+    <Date>2010-02-25</Date>
+    <Speed>Flash</Speed>
+    <Report>Full</Report>
+  </Status>
+  <Identification>
+    <Given>
+      <SubjectName>Given Company Name</SubjectName>
+      <Address>
+        <Street>Given Street</Street>
+        <Town>Given Town</Town>
+        <Province>Given Province</Province>
+        <Zipcode>05-300</Zipcode>
+        <Country>United Kingdom</Country>
+      </Address>
+      <Comments>Given Comments...</Comments>
+    </Given>
+    <Verified>
+      <SubjectName>SubjectName</SubjectName>
+      <OtherStyle>Other style</OtherStyle>
+      <Address>
+        <Street>Verified Street</Street>
+        <Town>Verified Town</Town>
+        <Province>Verified Province</Province>
+        <Zipcode>06-300</Zipcode>
+        <Country>United Kingdom</Country>
+      </Address>
+      <PostalAddress>
+        <Street>Postal Street</Street>
+        <Town>Postal Town</Town>
+        <Province>Postal Province</Province>
+        <Zipcode>70-200</Zipcode>
+        <Country>Postal Country</Country>
+      </PostalAddress>
+      <Telephone>+44 567-456-789</Telephone>
+      <Mobile>+44 222-456-789</Mobile>
+      <Fax>+44 123-456-789</Fax>
+      <Email>login@mail.com</Email>
+      <Website>http://www.com.pl</Website>
+      <Remarks>Remakrs</Remarks>
+    </Verified>
+  </Identification>
+</Report>

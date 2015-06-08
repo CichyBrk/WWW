@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+function sprawdz(sender, args)
+{
+
+	obj=sender;
+	alert(obj.value);	
+
+
+	
+
+}
+function zmien(nazwa)
+{
+	obrazek = document.getElementById("obr");
+	obrazek.src = nazwa;
+
+}
+var timerID;
+
+function zwieksz()
+{
+  document.forms[0].elements[0].value++;
+  timerID = setTimeout("zwieksz()", 1000);
+}
+function zmienkolor(kolor)
+{
+	p = document.getElementById("przyc");
+	p.style.backgroundColor=kolor;
+
+}
+
+</script>
+
+
+</head>
+
+<body onLoad="zwieksz()">
+<form action="" method="get">
+
+	<input type="button" value="1" onclick="sprawdz(this)" />
+	<img src="kiry.png" id="obr" onmouseover="zmien('kiry2.png')" onmouseout="zmien('kiry.png')" />
+	<input style="background-color:red" type="button" id="przyc" value="PRZYCISK" onmouseover="zmienkolor('green')" onmouseout="zmienkolor('red')" />
+</form>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="testowy.xslt"?>
+<Dane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Osoba>
+	<Imie>Jan</Imie>
+	<Nazwisko>Kowalski</Nazwisko>
+</Osoba>
+<Osoba>
+	<Imie>Piotr</Imie>
+	<Nazwisko>Janowski</Nazwisko>
+</Osoba>
+<Osoba>
+	<Imie>Anna</Imie>
+	<Nazwisko>Piotrowska</Nazwisko>
+</Osoba>
+  
+</Dane>

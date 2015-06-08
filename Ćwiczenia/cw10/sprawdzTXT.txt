@@ -1,0 +1,21 @@
+	<?php
+	session_start();
+	$login = $_POST["login"];
+	$haslo = $_POST["haslo"];
+	if($login == "user")
+	{
+		if($haslo == "koperek")
+		{
+			$_SESSION["zalogowany"] = loggedIn;
+			header("Location:index.php");
+		}
+		else
+		{
+			header("Location:login.php");
+		}
+	}
+	else
+		{
+			header("Location:login.php");
+		}
+	?>

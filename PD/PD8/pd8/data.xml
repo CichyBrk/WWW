@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="testowy.xslt"?>
+<dane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+<miejscowosc>Warszawa</miejscowosc>
+<data1>26.04.2015</data1>
+<data2>26.04.2015</data2>
+<nr>123 456 789</nr>
+<line>_________</line>
+<name>Robert Borkowski</name>
+<address>Nowoursynowska 161c, 77-708 Warszawa</address>
+<cost1>1362,00</cost1>
+<cost2>382,00</cost2>
+<cost3>130,00</cost3>
+<cost4>140,00</cost4>
+<cost5>10,00</cost5>
+<cost6>1362,00zł</cost6>
+
+
+<petla>
+<usluga>Usługa 1</usluga>
+<ilosc>1</ilosc>
+<wartosc1>400,00zł</wartosc1>
+<wartosc2>600,00</wartosc2>
+</petla>
+
+<petla>
+<usluga>Usługa 2</usluga>
+<ilosc>2</ilosc>
+<wartosc1>155,00zł</wartosc1>
+<wartosc2>180,50</wartosc2>
+</petla>
+
+<petla>
+<usluga>Usługa 3</usluga>
+<ilosc>6</ilosc>
+<wartosc1>225,00zł</wartosc1>
+<wartosc2>280,00</wartosc2>
+</petla>
+
+<petla>
+<usluga>Usługa 4</usluga>
+<ilosc>9</ilosc>
+<wartosc1>320,00zł</wartosc1>
+<wartosc2>380,00</wartosc2>
+</petla>
+
+<petla>
+<usluga>Usługa 5</usluga>
+<ilosc>2</ilosc>
+<wartosc1>102,00zł</wartosc1>
+<wartosc2>90,00</wartosc2>
+</petla>
+
+</dane>

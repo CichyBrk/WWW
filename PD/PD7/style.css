@@ -1,0 +1,19 @@
+﻿	html, body {
+		text-align: left;
+		background-color: #CFCFB0;
+		margin: 0 auto;
+	}
+	
+	.one{
+		width: 350px;
+		margin: 10px
+	}
+	
+	.text{
+		float: left;
+		clear: both;
+	}
+	
+	.argument{
+		float: right;
+	}

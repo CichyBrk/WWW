@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>FormularzRejestracyjny</title>
+	
+	<LINK REL="Stylesheet" HREF="style.css" TYPE="text/css">
+	
+	<script type="text/javascript">
+	    function checkElement(id,kryteria) {
+			obj = document.getElementById(id);
+			tekst = obj.value;
+			wynik = kryteria.test(tekst);
+			if(wynik)
+				{
+				obj.style.backgroundColor = 'white';
+				}
+				else
+				{
+				obj.style.backgroundColor = 'red';
+				}
+	    }
+		
+		function checkData(){
+			checkElement("imie",/^[A-ZŚĆŁŹŻ]{1}[a-ząćęłńóżźś]{2,20}$/);
+			checkElement("nazwisko",/^[A-ZŚĆŁŹŻ]{1}[a-ząćęłńóżźś]{2,20}(-[A-Z,Ł,Ż,Ś]{1}[a-ząćęłńóżźś]{2,20})?$/);
+			checkElement("haslo",/.{8,16}$/);
+			checkElement("dataUrodzenia",/^(0[1-9]|[1-2][0-9]|3[0-1])-(0[1-9]|1[0-2])-((19[0-9][0-9])|(20[0-1][0-5]))$/);
+			checkElement("numerTelefonu",/^[5-9]{1}[0-9]{2}-[0-9]{3}-[0-9]{3}$/);
+			checkElement("miasto",/^[A-ZŚĆŁŹŻ]{1}[a-ząćęłńóżźś]{2,20}([ ][A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?([-][A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?([ ][A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?(-[A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?$/);
+			checkElement("ulica",/^[A-ZŚĆŁŹŻ]{1}[a-ząćęłńóżźś]{2,20}([ ][A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?([-][A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?([ ][A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?(-[A-ZŁĆŻŚ]{1}[a-ząćęłńóżźś]{2,20})?([ ][0-9]{1,5})?$/);
+			checkElement("kodPocztowy",/^[0-9]{2}-[0-9]{3}$/);
+		}
+	</script>
+	
+</head>
+<body>
+	<form action="index.html" method="get">
+	<div class="one">
+	
+		<div class="text">
+			<p>Imie:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="imie"/></p>
+		</div>
+		
+		<div class="text">
+			<p>Nazwisko:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="nazwisko"/></p>
+		</div>
+		
+		<div class="text">
+			<p>Hasło:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="password" id="haslo"/></p>
+			<p>min. 8, maks. 16 znaków</p>
+		</div>
+		
+		<div class="text">
+			<p>Data Urodzenia:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="dataUrodzenia"/></p>
+			<p>dd-mm-rrrr</p>
+		</div>
+		
+		<div class="text">
+			<p>Plec:</p>
+		</div>
+		
+		<div class="argument" style="margin-right: 76px">
+			<p>Kobieta<input type="radio" name="plec" checked="checked" value="K"/></p>
+			<p>Mezczyzna<input type="radio" name="plec" value="M"/></p>
+		</div>
+		
+		<div class="text">
+			<p>Telefon komórkowy:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="numerTelefonu"/></p>
+			<p>aaa-bbb-ccc</p>
+		</div>
+		
+		<div class="text">
+			<p>Miasto:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="miasto"/></p>
+			<p>W. czlony z dużej litery</p>
+		</div>
+		
+		<div class="text">
+			<p>Ulica:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="ulica"/></p>
+			<p>nazwa numer</p>
+		</div>
+		
+		<div class="text">
+			<p>Kod Pocztowy:</p>
+		</div>
+		
+		<div class="argument">
+			<p><input type="text" id="kodPocztowy"/></p>
+			<p>aa-bbb</p>
+		</div>
+		
+		<div class="text">
+			<p>Posiadam prawo jazdy:</p>
+		</div>
+		
+		<div class="argument" style="margin-right: 90px">
+			<p><input type="checkbox" id="prawko"/></p>
+		</div>
+		
+		<div class="text">
+			<p><input type="button" id="wyslij" value="Wyslij" onClick="checkData()"/></p>
+			<p><input type="reset" name="czysc" value="Czysc"/></p>
+		</div>
+		
+		<div class="text"><a href="http://validator.w3.org/check?uri=http%3A%2F%2Frobertborkowski.cba.pl%2Findex.html"><img src="validator.png" alt="Błąd obrazka" /></a></div>
+	</div>
+	</form>
+</body>
+</html>
